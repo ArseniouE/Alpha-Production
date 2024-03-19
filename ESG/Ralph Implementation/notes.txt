@@ -3,6 +3,7 @@
 3.Εκτέλεση του script Create_Table_Olap_AbESGReport_AbESGOverallassessment.sql με olap  user.
 4.Τις functions Function_AbESGReport.sql και Function_AbESGOverallassessment.sql που πρέπει να δημιουργηθούν στον database server και αποτελούν τα exports βάσει πινάκων Ralph.
 5.Εκτέλεση του script View_AbESGReport_AbESGOverallAssessment.sql με olap  user.
-6.Οι functions function_olap_populate_incremental.sql  και function_olap_populate_uni.sql οι οποίες περιέχουν τον κώδικα των incremental runs Ralph και Unisystems και πρέπει να δημιουργηθούν στον database server.
-7.Το εκτελέσιμο OlapPopulate.exe το οποίο θα καλείται από τον Opcon και αποτελεί wrapper για τις functions του βήματος 2  (θα χρειαστεί να σταλεί μέσω MFT).
-8.Εκτέλεση ESGObligor.exe και ESGOverallAssessment.exe που παίρνει σαν παράμετρο μια ημερομηνία της μορφής YYYYMMDD προκειμένου να παραχθούν τα ESG Reports.
+6.Η function olapts.imports_and_fetch_size.txt που διορθώνει τα fetch_size και imports.
+7.Οι functions function_olap_populate_incremental.sql  και function_olap_populate_uni.sql οι οποίες περιέχουν τον κώδικα των incremental runs Ralph και Unisystems και πρέπει να δημιουργηθούν στον database server.
+8.Το εκτελέσιμο OlapPopulate.exe το οποίο θα καλείται από τον Opcon και αποτελεί wrapper για τις functions του βήματος 2  (θα χρειαστεί να σταλεί μέσω MFT).
+9.Εκτέλεση ESGObligor.exe και ESGOverallAssessment.exe που παίρνει σαν παράμετρο μια ημερομηνία της μορφής YYYYMMDD προκειμένου να παραχθούν τα ESG Reports.
