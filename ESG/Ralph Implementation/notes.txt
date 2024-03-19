@@ -1,0 +1,8 @@
+1.Το initialization script olap_populate_sql_v23_Full.sql το οποίο είναι edited το Full της version 22 ώστε να περιέχεται το νέο πεδίο στον entity Jurisdiction και το Value για τους Responsible Officers στην Γέφυρα. Υπενθυμίζουμε ότι πριν τρέξει το script θα πρέπει να γίνουν πρώτα run οι γραμμές 7 – 13 ώστε να γίνουν τα import των πινάκων καθώς και οι γραμμές 16 – 17 χωρίς το set προκειμένου να μην υπάρχει το πρόβλημα με το fetch_size. Έπειτα το script θα πρέπει να επανέλθει στην αρχική του μορφή και να γίνει run.
+2.Το initialization script για τους ESG πίνακες olap_populate_sql_uni_optimized_full.sql. Πρέπει να εκτελεστεί μετά το Full script του Ralph και αφορά τους λοιπούς πίνακες (ESG).
+3.Εκτέλεση του script Create_Table_Olap_AbESGReport_AbESGOverallassessment.sql με olap  user.
+4.Τις functions Function_AbESGReport.sql και Function_AbESGOverallassessment.sql που πρέπει να δημιουργηθούν στον database server και αποτελούν τα exports βάσει πινάκων Ralph.
+5.Εκτέλεση του script View_AbESGReport_AbESGOverallAssessment.sql με olap  user.
+6.Οι functions function_olap_populate_incremental.sql  και function_olap_populate_uni.sql οι οποίες περιέχουν τον κώδικα των incremental runs Ralph και Unisystems και πρέπει να δημιουργηθούν στον database server.
+7.Το εκτελέσιμο OlapPopulate.exe το οποίο θα καλείται από τον Opcon και αποτελεί wrapper για τις functions του βήματος 2  (θα χρειαστεί να σταλεί μέσω MFT).
+8.Εκτέλεση ESGObligor.exe και ESGOverallAssessment.exe που παίρνει σαν παράμετρο μια ημερομηνία της μορφής YYYYMMDD προκειμένου να παραχθούν τα ESG Reports.
