@@ -1,1 +1,13 @@
 SblFunction
+
+Στα πλαίσια του έργου BlazeAdvisor Workflow για την κλήση GetCreditLensDataForCreditDecisioning, επισυνάπτεται το script SBLTenant.sql που θα χρειαστεί να εκτελεστεί στον παραγωγικό server. 
+
+Το script θα πρέπει να εκτελεστεί στην tenant βάση με tenant χρήστη. 
+
+Σημειώνεται ότι θα πρέπει να δοθούν τα κατάλληλα δικαιώματα στον χρήστη που θα κάνει την κλήση ως:
+
+GRANT USAGE ON SCHEMA tenant TO user;
+GRANT SELECT ON ALL TABLES IN SCHEMA tenant to user;
+GRANT EXECUTE ON FUNCTION tenant.sblfunction(character varying) TO user WITH GRANT OPTION;
+
+Όπου user ο χρήστης της κλήσης. 
