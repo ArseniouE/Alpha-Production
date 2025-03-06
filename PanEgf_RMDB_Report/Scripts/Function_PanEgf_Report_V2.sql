@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------------------------------------------------
 --                                      Run script in OLAP database 
 -- Script creates a function olapts.panegf_report which takes a date as parameter and populate olapts.panegf_report table
+--Για το panegf βρίσκουμε την τελευταία διαβάθμιση. Αν και μόνο αν είναι fafin περιλαμβάνεται στην περίμετρο του ενδιάμεσου αρχείου.
 -------------------------------------------------------------------------------------------------------------------------
 
 -- FUNCTION: olapts.panegf_report(date)
