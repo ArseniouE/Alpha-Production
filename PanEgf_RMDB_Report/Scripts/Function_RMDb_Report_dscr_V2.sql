@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------------------------------------------------
 --                                      Run script in OLAP database 
 -- Script creates a function olapts.rmdb_report which takes a date as parameter and populate olapts.rmdb_report table
+--Για το rmdb στο ενδιάμεσο αρχείο περιλαμβάνεται η τελευταία διαβάθμιση που είναι fafin
 -------------------------------------------------------------------------------------------------------------------------
 
 -- FUNCTION: olapts.rmdb_report(date)
